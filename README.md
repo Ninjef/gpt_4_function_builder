@@ -28,15 +28,14 @@ A set of endpoints for creating python tasks + metainfo about those tasks using 
 ## Setup API  
 
 From a clean Python environment with pip installed:  
-`cd task_service`  
-`pip install -r requirements-dev.txt`  
-`cd ..`  
+`pip install -r task_service/requirements-dev.txt`  
 `cp .example.env ./.env`  
 
 Add your Open AI key to the .env  
 
 ## Run API  
-`cd task_service python app.py`  
+`cd task_service`  
+`python app.py`  
 
 ## Run Tests  
 `pytest task_service`  

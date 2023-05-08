@@ -1,5 +1,8 @@
 # Python API Coding Sample  
 
+## Video of me building this:
+https://youtu.be/yafzBesUDgQ
+
 ## Overview  
 This is a sample of a Python API that can be used to create and run Python tasks. It uses OpenAI's GPT-4 API to generate Python code from natural language descriptions of tasks.  
 

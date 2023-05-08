@@ -4,7 +4,6 @@
 This is a sample of a Python API that can be used to create and run Python tasks. It uses OpenAI's GPT-4 API to generate Python code from natural language descriptions of tasks.  
 
 Due to privacy concerns, I cannot share the full repo. This repo is a subset of the full repo, and is meant to demonstrate my coding style and ability to work with Python and APIs.  
-
 ## Context  
 - This code was completed in 4 days.  
 - This is an example of my POC code, meaning it was designed to be fast to iterate upon, and not to be production ready.  
@@ -20,20 +19,6 @@ Due to privacy concerns, I cannot share the full repo. This repo is a subset of 
   - Add more testing around edge cases and exceptions  
   - Add a CI/CD pipeline  
 
-# Client  
-Does nothing except display a test button right now.  
-
-## Client Requirements  
-- [ ] NPM `9.6`  
-- [ ] Node `v20.0`  
-
-## Run Client  
-`cd client`  
-`npm install`  
-`npm run dev-client`  
-Open a new terminal  
-`npm run start-tool-service`  
-
 # API  
 A set of endpoints for creating python tasks + metainfo about those tasks using natural language, as well as running those tasks.  
 
@@ -42,7 +27,7 @@ A set of endpoints for creating python tasks + metainfo about those tasks using 
 
 ## Setup API  
 
-From a clean Python environment:  
+From a clean Python environment with pip installed:  
 `cd task_service`  
 `pip install -r requirements-dev.txt`  
 `cd ..`  
@@ -56,6 +41,20 @@ Add your Open AI key to the .env
 ## Run Tests  
 `pytest task_service`  
 Note: some tests cost money as some of them call the acutal OpenAi API for completions. They don't use the most expensive models though.  
+
+# Client  
+Does nothing except display a test button right now.  
+
+## Client Requirements  
+- [ ] NPM `9.6`  
+- [ ] Node `v20.0`  
+
+## Run Client  
+`cd client`  
+`npm install`  
+`npm run dev-client`  
+Open a new terminal  
+`npm run start-tool-service`  
 
 ## API Examples  
 Example API request:  

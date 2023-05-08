@@ -12,15 +12,13 @@ Due to privacy concerns, I cannot share the full repo. This repo is a subset of 
 - What I would do to make this production ready:
   - Standardize the API request validation and response format
   - Add API security using a securely generated token (JWT)
+  - Use a formatting library like Black, and a linting library like Flake8
   - Abstract logical code away from the API requests
   - Reorganize the code / tests to follow a standard pattern
   - Make more comprehensive types
   - Add tests for the API itself
   - Add more testing around edge cases and exceptions
-  - Use a formatting library like Black, and a linting library like Flake8
   - Add a CI/CD pipeline
-
-
 
 # Client
 Does nothing except display a test button right now.

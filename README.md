@@ -2,15 +2,18 @@
 
 ## Video of me building this:
 https://youtu.be/yafzBesUDgQ
+This shows a few things:
+1. How I can use TDD (Test Driven Development) to write software. With the exception of a few functions, I wrote the tests first, and iterated on the code until the tests passed.
+2. How I can build new software efficiently by going from experimentation (failing/learning fast) to implementation in a highly iterative manner.
 
 ## Overview  
 This is a sample of a Python API that can be used to create and run Python tasks. It uses OpenAI's GPT-4 API to generate Python code from natural language descriptions of tasks.  
 
 Due to privacy concerns, I cannot share the full repo. This repo is a subset of the full repo, and is meant to demonstrate my coding style and ability to work with Python and APIs.  
 ## Context  
-- This code was completed in 4 days.  
+- This code was completed in 9 hours over 4 days.  
 - This is an example of my POC code, meaning it was designed to be fast to iterate upon, and not to be production ready.  
-- I would like to bring attention to the TDD (Test Driven Development) approach I used to develop this. With the exception of a few functions, I wrote the tests first, and iterated on the code until the tests passed. This is a great way to ensure that the code is well tested, and that the code is written in a way that is easy to test, and easy to understand.
+- The backend, or `task_service` section is ready to be deployed as an AWS lambda function, or run as a local api.
 - What I would do to make this production ready:  
   - Standardize the API request validation and response format  
   - Add API security using a securely generated token (JWT)  

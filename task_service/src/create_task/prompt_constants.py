@@ -24,6 +24,6 @@ PROMPT_JSON_EXAMPLE = """
        "pillow",
        etc...
    ],
-  "python_function": "def main_function(column_name, operator, value, input1):\n    import pandas as pd\n    df = input1\n#etc..."
+  "python_function": "def main_function(column_name, operator, value, input1):\\n    import pandas as pd\\n    df = input1\\n#etc..."
 }
 """

@@ -1,0 +1,13 @@
+# lambda base image for Docker from AWS
+FROM public.ecr.aws/lambda/python:3.10-arm64
+
+# Copy all code and lambda handler
+COPY requirements-lambda.txt .
+COPY lambda_function.py ${LAMBDA_TASK_ROOT}
+COPY src "${LAMBDA_TASK_ROOT}/src"
+
+# Install packages
+RUN  pip3 install -r requirements-lambda.txt --target "${LAMBDA_TASK_ROOT}"
+
+# Run lambda handler
+CMD ["lambda_function.lambda_handler"]

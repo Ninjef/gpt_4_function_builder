@@ -1,10 +1,10 @@
 # Python API Coding Sample  
 
-## Video of me building this:
-https://youtu.be/yafzBesUDgQ
-This shows a few things:
-1. How I can use TDD (Test Driven Development) to write software. With the exception of a few functions, I wrote the tests first, and iterated on the code until the tests passed.
-2. How I can build new software efficiently by going from experimentation (failing/learning fast) to implementation in a highly iterative manner.
+## Video of me building this:  
+https://youtu.be/yafzBesUDgQ  
+This video demonstrates a few things:  
+1. How I can use TDD (Test Driven Development) to write software. With the exception of a few functions, I wrote the tests first, and iterated on the code until the tests passed.  
+2. How I can build new software efficiently by going from experimentation (failing/learning fast) to implementation in a highly iterative manner.  
 
 ## Overview  
 This is a sample of a Python API that can be used to create and run Python tasks. It uses OpenAI's GPT-4 API to generate Python code from natural language descriptions of tasks.  

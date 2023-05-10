@@ -1,8 +1,22 @@
 # Python API Coding Sample  
+This is a code sample for prospective employers demonstrating my ability to develop a basic python-based api which leverages a large language model (in this case, GPT-4) to generate small code functions which can be run without knowing anything about the code inside them.
 
-## Video of me building this:  
-https://youtu.be/yafzBesUDgQ  
-This video demonstrates a few things:  
+## Examples  
+Example API request:  
+
+`POST http://localhost:8000/api/task/create`  
+Body:  
+```
+{   
+    "desired_action": "given a dataset containing a bunch of text, extract the most important topics from each text",  
+    "task_type": "passthrough"  
+}  
+```
+
+On successful response, a folder with a UUID will be generated under ./user_tasks/<the_uuid>. That folder will contain a `function.py` file which accomplishes the task you described, and a `metadata.json` file describing the function, its required parameters, and how it is meant to be run.  
+
+## [Video of me building this](https://youtu.be/yafzBesUDgQ)
+I hope this video demonstrates a few things:  
 1. How I can use TDD (Test Driven Development) to write software. With the exception of a few functions, I wrote the tests first, and iterated on the code until the tests passed.  
 2. How I can build new software efficiently by going from experimentation (failing/learning fast) to implementation in a highly iterative manner.  
 
@@ -61,16 +75,3 @@ Does nothing except display a test button right now.
 Open a new terminal  
 `npm run start-tool-service`  
 
-## API Examples  
-Example API request:  
-
-`POST http://localhost:8000/api/task/create`  
-Body:  
-```
-{   
-    "desired_action": "given a dataset containing a bunch of text, extract the most important topics from each text",  
-    "task_type": "passthrough"  
-}  
-```
-
-On successful response, a folder with a UUID will be generated under ./user_tasks/<the_uuid>. That folder will contain a `function.py` file and a `metadata.json` file.  

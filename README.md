@@ -15,7 +15,7 @@ Body:
 
 On successful response, a folder with a UUID will be generated under ./user_tasks/<the_uuid>. That folder will contain a `function.py` file which accomplishes the task you described, and a `metadata.json` file describing the function, its required parameters, and how it is meant to be run.  
 
-## [Video of me building this](https://youtu.be/yafzBesUDgQ)
+## [Video of me building this](https://youtu.be/XiuV2_qffMQ)
 I hope this video demonstrates a few things:  
 1. How I can use TDD (Test Driven Development) to write software. With the exception of a few functions, I wrote the tests first, and iterated on the code until the tests passed.  
 2. How I can build new software efficiently by going from experimentation (failing/learning fast) to implementation in a highly iterative manner.  
